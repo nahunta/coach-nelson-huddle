@@ -32,6 +32,7 @@ At the end of each season, wipe and replace:
   during off-season gaps)
 - Season-specific text → header subtitle, Team facts (Season, Colors),
   footer, OG description, and disclaimer all name "Fall Ball 2026"
+- Privacy pass → work through "How to strip it" under Privacy & PII
 
 Keep as-is across transitions:
 - Practice Resources / Coaches Corner (evergreen drill library)
@@ -174,6 +175,41 @@ Current announcements (as of Oct 25):
 - **PONY bat rule** — Only USA and BBCOR Drop 3 bats allowed
 
 ---
+
+## Privacy & PII
+The GitHub repo is **public** — every past commit is browsable, not just
+the live site. Removing something from the page does not remove it from
+git history.
+
+**Rules going forward:**
+- No player names, and no parent names tied to a player (e.g. "X's mom")
+  — thank volunteers by role only ("thank you to our Team Rep!")
+- Don't link sign-up sheets or forms that collect or show family info;
+  share those in GroupMe instead
+- Don't write names, links, or emails you want kept private into this
+  reference doc either — it's published with the site
+
+**Audit (Oct 25):** Live site is clean (only "Coach Nelson", the public
+NAO league email, and team-level info; images have no GPS/camera
+metadata). Git history contains parent + player first names from early
+Team Rep / Team DJ announcements, a Team Snacks Google Sheet link, two
+parent jersey order Google Form links, and the personal author email on
+every commit.
+
+**How to strip it (end of season or any time):**
+1. **Lock down Google links (do first)** — set the snacks sheet to
+   "Restricted" and close/restrict the jersey order forms in Google Drive.
+   Scrubbing git does not revoke a live link.
+2. **Scrub history** — rewrite history to remove names (and optionally the
+   Google links) from every commit, then force-push.
+   - Every commit hash changes; the old history is replaced on GitHub
+   - GitHub may keep old commits reachable by hash for a while; a GitHub
+     Support request purges them fully
+   - Anyone who already cloned or cached the repo keeps their copy
+3. **Hide the commit email** — turn on "Keep my email addresses private"
+   in GitHub settings and set git's email to the
+   `@users.noreply.github.com` address GitHub provides. Old commits can be
+   rewritten to that address in the same pass as step 2.
 
 ## Weekly Update Checklist
 1. Add new results to the bottom of Scores (follow the Result rule)
