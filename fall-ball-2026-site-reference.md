@@ -90,20 +90,21 @@ Live table format:
 
 - Opponent prefixed with "vs" for home games, "@" for away games
 - Tournaments: opponent column holds the tournament name, Home/Away is
-  "—", time is "TBA" until known
+  "—", time is "TBA" until known; multi-day tournaments get one row per
+  day
 - Non-game events (e.g. Closing Ceremony): opponent column holds the event
   name, Home/Away is "—"
 - Subtitle note: game times/locations subject to change; check GroupMe
 - **Upcoming games only** — on each weekly update, remove games that have
   been played (their results move to Scores)
 
-Current schedule (as of Nov 9):
+Current schedule (as of Nov 14):
 
 | Date | Day | Time | Opponent | Home/Away | Location |
 |---|---|---|---|---|---|
-| Nov 14 | Sat | 9:00 AM | vs CAYL | Home | NAO Field #4 |
-| Nov 21 | Sat | 10:00 AM | NAO Closing Ceremony | — | NAO Field #4 |
-| Dec 5–6 | Sat–Sun | TBA | NAO Brown Santa Tournament | — | NAO Field #4 |
+| Nov 21 | Sat | 11:00 AM | NAO Closing Ceremony | — | NAO Field #4 |
+| Dec 5 | Sat | TBA | NAO Brown Santa Tournament | — | NAO Field #4 |
+| Dec 6 | Sun | TBA | NAO Brown Santa Tournament | — | NAO Field #4 |
 
 ### 3. Season Info — Scores
 **V1 (this season):** Simple results table, no PII (no player or coach
@@ -126,8 +127,8 @@ W/L badge shows our result.
 - Away game: our score first (e.g., W 8-4 = we scored 8, they scored 4)
 - Forfeits: badge plus "(Forfeit)", no score
 
-Latest result added (Nov 9 update): Nov 7, 1:45 PM, Delwood United, Away,
-**L 7-10** (away game, so our score first).
+Latest result added (Nov 14 update): Nov 14, 9:00 AM, CAYL, Home,
+**W 5-10** (home game, so opponent's score first; we scored 10).
 
 **V2.0 (future):** Professional per-inning box score, fed from the OnDeck
 app Nelson was developing last fall. Out of scope for this build — noting
@@ -175,12 +176,13 @@ longer relevant (e.g. jersey order deadline comes down once it's passed).
 Keep this simple — plain manual edit, no dates/expiration logic needed.
 Time-sensitive items (e.g. fields closed) go at the top of the list.
 
-Current announcements (as of Nov 9), in page order:
-- **Practice Schedule Update** — practices continue this week and next,
-  Wednesdays 6:30–8:30 and Fridays 5:30–7:30; no practices Nov 25 and 27
-  (Thanksgiving break)
+Current announcements (as of Nov 14), in page order:
+- **Practice Schedule Update** — practices continue this week, Wednesday
+  6:30–8:30 plus optional batting practice Friday 6:00–7:30; no practices
+  Nov 25 and 27 (Thanksgiving break)
 - **NAO Closing Ceremony** — players on the 10U Mustang field #4 by
-  10:00 am Sat, Nov 21; no game that morning, may scrimmage
+  10:45 am Sat, Nov 21 (ceremony at 11:00 AM); trophies for each player,
+  free Kona Ice, hot chocolate, and donuts for players and families
 - **NAO Brown Santa Tournament** — Dec 5–6; each player brings one
   unwrapped gift for the toy drive; daily gate fees for anyone over 12,
   plus Pay at Plate umpire fees each game
@@ -247,4 +249,4 @@ every commit.
 - [x] Official team name — Toros
 - [x] Custom domain — coachnelsonhuddle.com
 - [x] Closing Ceremony — resolved; back on the schedule for Sat, Nov 21,
-      10:00 AM at NAO Field #4
+      11:00 AM at NAO Field #4 (players arrive by 10:45 am)
